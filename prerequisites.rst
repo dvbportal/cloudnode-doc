@@ -20,15 +20,14 @@ Required Software
 -----------------
 
 The workflow used to develop and deploy apps on Cloudnode depends on
-Git, Node.JS, npm and our command line client, which in fact is a node
+Git, Node.js, npm and our command line client, which in fact is a node
 app itself. The tools are available for all major OS'es. See the
 following links
 
 -  git - \ http://git-scm.com/\  - The distributed version control
    system
 -  node.js - \ http://nodejs.org\  - The node server
--  npm - \ http://npmjs.org/\  - The Node Package Manager
--  cloudnode - **npm install cloudnode-cli -g** - The `Cloudnode command
+-  cloudnode (optional) - **npm install cloudnode-cli -g** - The `Cloudnode command
    line </cloudnode-command-line>`_
 
 .. _best-practices:
@@ -47,9 +46,8 @@ Only include modules that you will use.
 Sensitive data and passwords
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Make sure to keep sensitive data outside of your code because the
-repositories are public. It is recommended to store sensitive data using
-`environment variables </api#env>`_.
+Make sure to keep sensitive data outside of your code. It is recommended
+to store sensitive data using `environment variables </api#env>`_.
 
 .. _read-only-filesystem:
 
@@ -83,7 +81,8 @@ Logs
 ----
 
 Logs on the Cloudnode platform should be considered transient. It is
-possible to tail the last 100 lines through the command line.
+possible to tail the last several 100 lines through the command line
+or the dashboard.
 
 See :ref:`troubleshooting` for full details.
 
@@ -93,8 +92,8 @@ Dependency Management
 ---------------------
 
 If your app depends on any npm packages, they need to be installed into
-your Node VM. See `Node package manager </node-package-manager>`_ for
-details.
+your Node VM. The easiest way is to list them in the "package.json" file.
+See `Node package manager </node-package-manager>`_ for details.
 
 .. _app-initialization:
 
@@ -122,7 +121,7 @@ Start Guide </quick-start-guide>`_ for more details.
 
 For additional help on using Git see the excellent help files at GitHub
 especially the setup and troubleshooting guides when using ssh key and
-key phrases: \ http://help.github.com/\ 
+key phrases: \ http://help.github.com/\
 
 Git Submodules
 ~~~~~~~~~~~~~~

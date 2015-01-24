@@ -1,19 +1,16 @@
 HTTP Caching
 ============
 
-All hosted NodeJS apps leverage a HTTP cache on Cloudnode. We are using
-\ `Varnish <http://www.varnish-cache.org/>`_\  as a HTTP accelerator.
-Varnish uses numerous techniques to improve the performance. It even has
-compiled configuration libraries, in-memory logging, and works hand in
-hand with the OS for memory management.
+All hosted applications leverage HTTP caching on Cloudnode. We are using
+HTTP acceleration when suitable to improve the performance.
 
 Cache Invalidation
 ~~~~~~~~~~~~~~~~~~
 
 The biggest challenge when using caching is the control of the cache TTL
-and cache invalidation. Varnish only delivers a cached page, when it is
+and cache invalidation. The cache server only delivers a cached asset, when it is
 absolutely safe to do so. The URL and all parameters have to match for a
-cache hit. So a Node app can control caching in different ways. Per
+cache hit. An application can control caching in different ways. Per
 default no caching takes place, but you should decide which pages or
 parts of your app could benefit from caching. Your application's
 response time will improve dramatically when you take the advantage of

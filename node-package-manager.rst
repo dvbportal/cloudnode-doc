@@ -1,7 +1,7 @@
 Node Package Manager
 ====================
 
-**Current version: npm 1.1.4 (03/18/12) (see also: how to update,
+**Current version: npm 1.4.9 (see also: how to update,
 changelog)**
 
 Cloudnode uses \ `npm <http://npmjs.org/>`_\  for dependency management.

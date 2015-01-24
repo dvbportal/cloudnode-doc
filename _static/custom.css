@@ -1,0 +1,14 @@
+.wy-side-nav-search img { margin: 0; height: 50px; width: 50px; background-color: #254278; }
+.wy-side-nav-search { background-color: #404040; }
+.wy-nav-side { webkit-transition: left,ease-in,.3s; -moz-transition: left,ease-in,.3s; transition: left,ease-in,.3s; }
+.wy-nav-side { left: -300px; }
+.wy-nav-side.shift { left: 0; }
+.wy-nav-content-wrap { webkit-transition: left,ease-in,.3s; -moz-transition: left,ease-in,.3s; transition: left,ease-in,.3s; }
+.wy-nav-content-wrap { margin-left: 0; }
+.wy-nav-content-wrap.shift { margin-left: 300px; }
+.wy-nav-top { width: 40px; display: block; background: white; color: black; line-height: 0; margin-bottom: -45px; }
+.btn { box-shadow: none; }
+.btn-neutral { background-color: white !important; }
+span.pre { color: #E74C3C; }
+a:visited { color: #2980b9; }
+.wy-menu-vertical a:visited { color: #B3B3B3; }

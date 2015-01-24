@@ -1,7 +1,7 @@
 Node.js
 =======
 
-**Current versions: 0.4.12, 0.6.12 (03/17/12)**
+**Current versions: 0.10.35, 0.11.13 (01/01/15)**
 
 Node.js is a non-blocking, evented I/O framework using the V8 JavaScript
 engine.
@@ -10,7 +10,7 @@ We host Node.js applications in their own VMs, which we call Node
 Machines. Cloudnode is based on the Nodester platform. During the beta
 stage, we may need to shut the service down for upgrades or service
 without notice. You should join our `discussion
-group <http://groups.google.com/group/cloudnode>`_ to share any feedback
+group <https://groups.google.com/forum/#!forum/cloudnode>`_ to share any feedback
 and get important announcements that can affect running apps.
 
 -  `Preparing for deployment <#preparing>`_
@@ -28,7 +28,7 @@ specify any port you like as parameter to the listen function (in this
 sample port 8124). The platform will transparently override the
 parameter with the port of your Node VM which is in effect.
 
-::
+.. code-block:: javascript
 
     var http = require('http');
     http.createServer(function (req, res) {
@@ -59,11 +59,11 @@ command:
 
 ::
 
-    $ cloudnode app create <appname> <startfile> 
+    $ cloudnode app create <appname> <startfile>
               - Creates a new app named <appname>, <startfile> is optional
 
 Deployment is done with every Git push command. Additionally the
-application is restarted to active the changes introduced with the push
+application is restarted to activate the changes introduced with the push
 command.
 
 .. _dependencies:
@@ -71,5 +71,5 @@ command.
 Dependencies
 ~~~~~~~~~~~~
 
-When your repository includes sub modules, these are also push to the
+When your repository includes sub modules, these are also pushed to the
 Node Machine.

@@ -7,24 +7,33 @@ updated with the latest version of your application. An automatic
 restart ensures that the most recent version goes live after the push
 command completes.
 
-Cloudnode Remote Branches Special Directories Submodules
+-  :ref:`cloudnode-remote`
+-  :ref:`branches`
+-  :ref:`special-directories`
+-  :ref:`submodules`
+
+.. _cloudnode-remote:
 
 Cloudnode Remote
 ~~~~~~~~~~~~~~~~
 
-When creating a new Cloudnode App with the command line client, a Git
+When creating a new Cloudnode app with the command line client, a Git
 remote pointing to Cloudnode is automatically configured. If you wish to
 configure the remote manually or re-add the remote under a different
-name, you can:
+name, you can use the Git remote command. The remote repository URL (SSH or HTTPS)
+is displayed in the application details.
 
 ::
 
-    $ git remote add cloudnode git@cloudno.de:demoapp.git
+    $ git remote add cloudnode https://git.cloudno.de/demoapp.git
 
 In this example Cloudnode (the third argument to git) is the name of the
 remote and demoapp should be replaced with your app name.
 
+.. _branches:
+
 Branches
+~~~~~~~~
 
 Cloudnode will ignore branches other than master if they are pushed.
 Only the master branch is used for deployment.
@@ -40,6 +49,8 @@ In this example Cloudnode (the second argument to git) is the name of
 the remote and demobranch is the name of the local branch being deployed
 to Cloudnode.
 
+.. _special-directories:
+
 Special Directories
 ~~~~~~~~~~~~~~~~~~~
 
@@ -48,10 +59,14 @@ when receiving your app code. The following directories will be ignored
 if they exist in your Git repository, so they can be used by the
 platform for special purposes:
 
-mnt/ Used for mounting your app's Cloud Storage. log/ Used for log
-collection. See Logging for details and usage. tmp/ Writeable directory
-available for transient file storage. See Platform Prerequisites for
+**/mnt** - Used for mounting your app's Cloud Storage.
+
+**/log** - Used for log collection. See Logging for details and usage.
+
+**/tmp** - Writeable directory available for transient file storage. See Platform Prerequisites for
 details and usage.
+
+.. _submodules:
 
 Submodules
 ~~~~~~~~~~

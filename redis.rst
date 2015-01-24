@@ -26,11 +26,20 @@ needed to access the Redis Database. Tot do so select the Redis database
 during application creation. The environment will receive the following
 variables:
 
+-  redis\_host="host IP address"
 -  redis\_port="port number"
 -  redis\_auth="autorization code"
 
 You can check these values from the "Manage App" screen by clicking "Get
 Env".
+
+Redis Backups
+~~~~~~~~~~~~~
+
+Every database running on the Cloudnode platform is backed up on a daily basis.
+The backup are stored for at least 14 days. You can download your backups
+from the database details page and store them in another safe place.
+
 
 Usage Example
 ~~~~~~~~~~~~~

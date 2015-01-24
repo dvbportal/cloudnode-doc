@@ -1,7 +1,7 @@
 Cloudnode Command Line
 ======================
 
-**Current version: 0.2.22 (02/18/12) (see also: how to update,
+**Current version: 0.2.23 (see also: how to update,
 changelog)**
 
 The Cloudnode command line tool is an interface to the `Cloudnode Web
@@ -36,7 +36,7 @@ Usage
 -----
 
 After having installed the client, enter your credentials. This needs to
-be done only once. The user name is the same as in your OpenID, the
+be done only once. The user name is the same as in your Cloudnode name, the
 password is the API key shown on your \ `account
 page <https://cloudno.de/account?admin>`_\ .
 
@@ -98,11 +98,11 @@ category:
     $ cloudnode user
     cloudnode user register <coupon-code> - Register a user
     cloudnode user setup <username> <password> - Setup this user
-    cloudnode user setpass <password> 
+    cloudnode user setpass <password>
                    - Set a new password for this user
-    cloudnode user setkey </path/to/sshkey> 
+    cloudnode user setkey </path/to/sshkey>
                    - Set an sshkey (if no argument, ~/.ssh/id_rsa.pub is used)
-    cloudnode user create <username> <password> <email address> 
+    cloudnode user create <username> <password> <email address>
                    <file containing ssh public key> <coupon code> - Create a user
 
 App Commands
@@ -119,7 +119,7 @@ category:
     cloudnode app info <appname> - Returns app specific information
     cloudnode app logs <appname> - Returns app logs
     cloudnode app stop|start|restart <appname> - Controls app status.
-    cloudnode app create <appname> <startfile> 
+    cloudnode app create <appname> <startfile>
                   - Creates a new app named <appname>, <startfile> is optional.
     cloudnode app init <appname> - Fetches the remote repo and sets it up.
     cloudnode app clone <appname> - Fetches the remote repo.

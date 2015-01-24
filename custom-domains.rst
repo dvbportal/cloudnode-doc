@@ -1,11 +1,11 @@
 Custom Domains
 ==============
 
-Cloudnode allows you to have Node apps written and hosted on Cloudnode
+Cloudnode allows you to have applications written and hosted on Cloudnode
 respond to requests from your own domain names. For example, if you own
-the domain hardtoremember.com and the Node app
+the domain hardtoremember.com and the application
 hardtoremember.cloudno.de, then you can configure things such that
-visitors to hardtoremember.com are served the Node app. The app is still
+visitors to hardtoremember.com are served by the Node app. The app is still
 created and hosted on Cloudnode servers.
 
 To accomplish this, you need to:
@@ -23,6 +23,8 @@ DNS can be tricky, so if you need help, just ask in the Cloudnode group.
 Example CNAME Record
 ~~~~~~~~~~~~~~~~~~~~
 
+::
+
     www.example.com. CNAME example.cloudno.de
 
 Make sure to use the symbolic name and not an IP address, because IP
@@ -38,9 +40,9 @@ www.example.com to your application:
 1. Go to your configured application directory
 2. Run the following command line:
 
-    ::
+::
 
-        $ cloudnode appdomain add www.example.com    
+    $ cloudnode appdomain add www.example.com
 
 After these steps your application should be reachable under the URL
 http://www.example.com.

@@ -28,7 +28,7 @@ Using the API / CLI
 
 The API uses basic authentication over a secure SSL connection. We plan
 to change this as soon as the Nodester platform supports OAuth. The user
-name is the same as in your OpenID. Instead of a password an API key is
+name is the same as in your Cloudnode name. Instead of a password an API key is
 used. The API key is maintained by the platform and is shown on \ `your
 account <https://cloudno.de/account?admin>`_\  page. **You need to
 create at least one application to get access to your API key.**
@@ -74,7 +74,9 @@ You are now ready to use the command line tool.
 SSH issues
 ----------
 
-Make sure that you have uploaded your public SSH key to \ `your
+If you have SSH issues, you may consider to use Git over HTTPS, which is easier to use.
+
+If you want to use SSH, make sure that you have uploaded your public SSH key to \ `your
 account <https://cloudno.de/account?ssh>`_\ . Compare the fingerprint
 that is displayed on your account page with the one displayed when
 running the following command on your local computer:
@@ -177,14 +179,13 @@ also use the command line to tail your application log file. Run the
     cloudnode info Server running
     cloudnode info
 
-Cloudnode Support Group
------------------------
+Cloudnode Google Group
+----------------------
 
-For additional help visit the \ `Cloudnode Support
+For additional help visit the \ `Cloudnode Google
 Group <http://support.cloudno.de>`_\ .
 
-Contact Us
-----------
+Open a ticket
+-------------
 
-You can also use the contact form from every page's footer to send us a
-private message.
+If you are not finding what you are looking for, open a ticket from your dashboard and we will help you.

@@ -1,12 +1,12 @@
 API
 ===
 
-Cloudnode is build on a RESTful API the allows to execute all commands
+Cloudnode is build on a RESTful API that allows to execute all commands
 from the web frontend, the command line tool or a future client-side
 app.
 
-We are currently running the "stable" version of Node v.0.4.10 and we
-support Node.JS VMs, we call Cloudnode machines. This means that you can
+We are currently running the "stable" version of Node.js v0.10.35 and we
+support Node.js VMs, we call Cloudnode machines. This means that you can
 install your own NPM modules. Git is required to push updates to your
 Cloudnode machine. The following API calls are defined:
 
@@ -25,11 +25,11 @@ Cloudnode machine. The following API calls are defined:
 Status
 ~~~~~~
 
-    Get Status :: GET Base URL: https://cloudno.de
+::
+
+    Get Status :: GET
 
     /status - Returns platform status and number of apps running
-
-::
 
     $ curl https://cloudno.de/status
 
@@ -38,8 +38,9 @@ Status
 User
 ~~~~
 
-    Register User :: POST (Coupon is required.) Base URL:
-    https://cloudno.de
+::
+
+    Register User :: POST (Coupon is required.)
 
     /user - creates user account (pass in user and password and email
     and id\_rsa.pub string) Ensure that all + in the ssh key are
@@ -48,26 +49,24 @@ User
     the plus signs: "cat ~/.ssh/id\_rsa.pub \| sed s/'+'/'%2B'/g \|
     pbcopy"
 
-::
-
     $ curl -X POST -d "user=testuser&password=123& \
       email=chris@cloudno.de&rsakey=ssh-rsa AAAAB3NzaC1yc..." https://cloudno.de/user
 
-    Update User :: PUT Base URL: https://api.cloudno.de
+::
+
+    Update User :: PUT
 
     /user - update user account (pass in password and/or RSA key - "cat
     ~/.ssh/id\_rsa.pub \| sed s/'+'/'%2B'/g \| pbcopy")
 
-::
-
     $ curl -X PUT -u "testuser:123" -d "password=test" https://api.cloudno.de/user
     $ curl -X PUT -u "testuser:123" -d "rsakey=1234567" https://api.cloudno.de/user
 
-    Delete User :: DELETE Base URL: https://api.cloudno.de
+::
+
+    Delete User :: DELETE
 
     /user - delete user account (requires basic auth)
-
-::
 
     $ curl -X DELETE -u "testuser:123" https://api.cloudno.de/user
 
@@ -76,49 +75,49 @@ User
 App
 ~~~
 
-    Create Application :: POST Base URL: https://api.cloudno.de
+::
+
+    Create Application :: POST
 
     /app - create nodejs app for hosting (requires basic auth and
     returns the port address required for use along with a git repo to
     push to)
 
-::
-
     $ curl -X POST -u "testuser:123" -d "appname=a&start=hello.js" https://api.cloudno.de/app
 
-    Change Application :: PUT Base URL: https://api.cloudno.de
+::
+
+    Change Application :: PUT
 
     /app - update starting app name (requires basic auth, appname, and
     starting page and returns the port address required for use along
     with a git repo to push to and running status of the app)
 
-::
-
     $ curl -X PUT -u "testuser:123" -d "appname=a&start=hello1.js" https://api.cloudno.de/app
 
-    Start/Stop Application :: POST Base URL: https://api.cloudno.de
+::
+
+    Start/Stop Application :: POST
 
     /app - start and stop your hosted nodejs app (requires basic auth,
     appname, and running=true\|false and returns the port address
     required for use along with a git repo to push to)
 
-::
-
     $ curl -X PUT -u "testuser:123" -d "appname=a&running=true" https://api.cloudno.de/app
 
-    Delete Application :: DELETE Base URL: https://api.cloudno.de
+::
+
+    Delete Application :: DELETE
 
     /app - delete nodejs app (requires basic auth and appname)
 
-::
-
     $ curl -X DELETE -u "testuser:123" -d "appname=test" https://api.cloudno.de/app
 
-    Application Information :: GET Base URL: https://api.cloudno.de
+::
+
+    Application Information :: GET
 
     /app/ - get nodejs app info (requires basic auth and appname)
-
-::
 
     $ curl -u "testuser:123" https://api.cloudno.de/app/appname
 
@@ -127,11 +126,11 @@ App
 Apps
 ~~~~
 
-    All Applications Information :: GET Base URL: https://api.cloudno.de
+::
+
+    All Applications Information :: GET
 
     /apps - get all nodejs app info(requires basic auth)
-
-::
 
     $ curl -u "testuser:123" https://api.cloudno.de/apps
 
@@ -140,30 +139,30 @@ Apps
 Env
 ~~~
 
-    Create/Update Environment :: PUT Base URL: https://api.cloudno.de
+::
+
+    Create/Update Environment :: PUT
 
     /env - create/update environment key/value pair (requires basic
     authentication, appname and key/value)
 
-::
-
     $ curl -X PUT -u "testuser:123" -d "appname=test&key=color&value=red" https://api.cloudno.de/env
 
-    Delete Environment :: DELETE Base URL: https://api.cloudno.de
+::
+
+    Delete Environment :: DELETE
 
     /env - delete environment key/value pair (requires basic
     authentication, appname and key/value)
 
-::
-
     $ curl -X DELETE -u "testuser:123" -d "appname=test&key=color" https://api.cloudno.de/env
 
-    Get Environment :: GET Base URL: https://api.cloudno.de
+::
+
+    Get Environment :: GET
 
     /env - get all environment key/value pairs (requires basic
     authentication and appname)
-
-::
 
     $ curl -u "testuser:123" https://api.cloudno.de/env/test
 
@@ -172,12 +171,11 @@ Env
 NPM
 ~~~
 
-    Install/Upgrade/Uninstall NPM Packages :: POST Base URL:
-    https://api.cloudno.de
+::
+
+    Install/Upgrade/Uninstall NPM Packages :: POST
 
     /npm - Allows you to manage the NPM packages for an application.
-
-::
 
     $ curl -X POST -u "testuser:123" -d "appname=a&action=install&package=express" \
            https://api.cloudno.de/npm
@@ -193,32 +191,31 @@ NPM
 Appdomains - Add DNS A Record
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Create Application Domain :: POST Base URL: https://api.cloudno.de
+::
+
+    Create Application Domain :: POST
 
     /appdomains - create app domain for hosting example.com (requires
     basic auth)
 
-::
-
     $ curl -X POST -u "testuser:123" -d "appname=test&domain=example.com" \
            https://api.cloudno.de/appdomains
 
-    Delete Application Domain :: DELETE Base URL: https://api.cloudno.de
+::
+
+    Delete Application Domain :: DELETE
 
     /appdomains - delete app domain for hosting example.com (requires
     basic auth)
 
-::
-
     $ curl -X DELETE -u "testuser:123" -d "appname=test&domain=example.com" \
            https://api.cloudno.de/appdomains
 
-    Application Domain Information :: GET Base URL:
-    https://api.cloudno.de
+::
+
+    Application Domain Information :: GET
 
     /appdomains - get list of your domains (requires basic auth)
-
-::
 
     $ curl -u "testuser:123" https://api.cloudno.de/appdomains
 
@@ -280,7 +277,7 @@ Deploying and updating your Node.js application is simple.
            https://api.cloudno.de/app
 
 Upon creating or changing your application via our API, you will receive
-a Git reop URL from our API response. Add a Cloudnode remote to your
+a Git repo URL from our API response. Add a Cloudnode remote to your
 project as follows:
 
 ::
@@ -298,6 +295,6 @@ Start your application.
 ::
 
     $ curl -X PUT -u "testuser:123" -d "appname=myapp&running=true" \
-           https://api.cloudno.de/app  
+           https://api.cloudno.de/app
 
 Visit your application via http://myapp.cloudno.de
