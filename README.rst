@@ -6,9 +6,8 @@ Cloudnode Docs
 Purpose
 -------
 
-`Read the Docs`_ hosts documentation for the open source community. It supports
-Sphinx_ docs written with reStructuredText_, and can pull from your Subversion_,
-Bazaar_, Git_, and Mercurial_ repositories.
+`Read the Docs`_ hosts the Cloudnode documentation which is built from this Git_ repository.
+All documents are written in reStructuredText_ and are being processed with Sphinx_.
 
 .. _Read the docs: http://readthedocs.org/
 .. _Sphinx: http://sphinx.pocoo.org/
@@ -21,7 +20,7 @@ Bazaar_, Git_, and Mercurial_ repositories.
 Documentation for Cloudnode
 ---------------------------
 
-You will find complete documentation for `the Cloudnode site`_.
+You will find here the complete documentation for `the Cloudnode site`_.
 
 .. _the Cloudnode site: https://docs.cloudno.de
 
