@@ -11,13 +11,13 @@ Deploy your Node.js applications using git and use our infrastructure to host yo
 .. image:: _static/cloudnode-logo2-light.png
 
 Getting Started
----------------
+~~~~~~~~~~~~~~~
 
 Cloudnode has many documents to help. To get started read the Quick Start Guide. Then browse and read the
 documents on the left side.
 
 Support
--------
+~~~~~~~
 
 If you can't find the resources you are looking for, or need any help, open a ticket from your
 `dashboard <https://cloudno.de/dashboard>`_.
@@ -32,7 +32,7 @@ These documents are also available as an eBook for your preferred reader:|br|
 `cloudnode.pdf <https://media.readthedocs.org/pdf/cloudnode/latest/cloudnode.pdf>`_
 — Cloudnode User's Guide (latest build)
 
-Contents:
+**Contents:**
 
 .. toctree::
    :maxdepth: 2
