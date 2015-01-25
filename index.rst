@@ -29,7 +29,7 @@ If you can't find the resources you are looking for, or need any help, open a ti
 These documents are also available as an eBook for your preferred reader:
 
 -  `cloudnode.pdf <https://media.readthedocs.org/pdf/cloudnode/latest/cloudnode.pdf>`_— Cloudnode User's Guide (latest build)
--  `cloudnode.epub <https://media.readthedocs.org/pdf/cloudnode/latest/cloudnode.epub>`_ — Cloudnode User's Guide (latest build)
+-  `cloudnode.epub <https://media.readthedocs.org/epub/cloudnode/latest/cloudnode.epub>`_ — Cloudnode User's Guide (latest build)
 
 **Contents:**
 
