@@ -67,7 +67,7 @@ Installed software
 The virtual machine comes with the following pre-installed tools.
 
 ================  ===============================================
-Type              Pre-Installed
+**Type**          ** Pre-Installed **
 ----------------  -----------------------------------------------
 Shell             bash, sh
 Linux Utils       Standard Ubuntu Utils
@@ -75,7 +75,7 @@ Editor            vi(m)
 Build Tools       make, npm, nvm
 Compiler          Python 2.7, Node.js 0.12.9 and 4.2.4, gcc 4.8.4
 Source Control    git
-Additional Tools  Docker
+Additional Tools  Docker, Cloudnode-cli
 ================  ===============================================
 
 Additional software can be installed as Docker containers or using apt.
