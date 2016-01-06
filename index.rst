@@ -40,6 +40,7 @@ These documents are also available as an eBook for your preferred reader:
    prerequisites
    support-resources
    cloudnode-command-line
+   cloudnode-developer-shell
    node-package-manager
    api
    git
