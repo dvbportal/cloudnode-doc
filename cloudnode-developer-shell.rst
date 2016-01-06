@@ -36,6 +36,17 @@ This will:
 - Mount your persistent /home drive
 - Mount your managed /app device (readonly)
 
+Features
+~~~~~~~~
+
+Developer Shell has the following features:
+
+- A ephemeral virtual machine instance
+- Terminal access from a web browser
+- 5 GB persistent disk storage
+- Preinstalled Cloudnode CLI and other tools
+- Language support for Javascript, Python, C and C++
+
 Virtual machine instance
 ------------------------
 
@@ -67,15 +78,15 @@ Installed software
 The virtual machine comes with the following pre-installed tools.
 
 ================  ===============================================
-**Type**          ** Pre-Installed **
+**Type**          **Installed**
 ----------------  -----------------------------------------------
 Shell             bash, sh
 Linux Utils       Standard Ubuntu Utils
 Editor            vi(m)
 Build Tools       make, npm, nvm
 Compiler          Python 2.7, Node.js 0.12.9 and 4.2.4, gcc 4.8.4
-Source Control    git
-Additional Tools  Docker, Cloudnode-cli
+Source Control    git 1.9.1
+Additional Tools  Docker 1.9.1, Cloudnode-cli 0.2.23
 ================  ===============================================
 
 Additional software can be installed as Docker containers or using apt.
