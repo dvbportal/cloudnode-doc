@@ -37,7 +37,7 @@ This will:
 - Mount your managed /app device (readonly)
 
 Virtual machine instance
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 When you launch Developer Shell the platform provisions a docker-based 
 compute instance running an Ubuntu 14.04 Linux operating system. Shell
@@ -45,15 +45,23 @@ instances persist while your Shell session is active and terminate after
 a hour of inactivity.
 
 Command-line access
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 The Developer Shell provides command-line access to the virtual machine
-instance in a browser-based terminal window.
+instance in a browser-based terminal window. You can open multiple sessions
+to the same instance.
 
 Persistent disk storage
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Developer Shell provisions 5GB of persistent disk storage mounted as your
 $HOME directory. This storage will unlike the instance itself not time out
 on inactivity. All our file stored in your home directory, including projects,
-scripts annd configuration files
+scripts annd configuration files like .bashrc, .cloudnoderc and .vimrc persist
+between sessions. Your $HOME directory is private to you and cannot be addressed
+by other users.
+
+Installed software
+------------------
+
+The virtual machine comes with pre-installed tools
