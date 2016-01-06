@@ -18,7 +18,8 @@ Developer Shell features:
 You can also use the Developer Shell to perform tasks which would normally require a Linux
 machine even if you are running a PC or another device.
 
-.. note:: **Beta** This is a Beta feature that is not covered by a SLA and may be subject to changes.
+.. note:: **Beta** 
+   This is a Beta feature that is not covered by a SLA and may be subject to changes.
 
 Getting Started
 ~~~~~~~~~~~~~~~
@@ -30,7 +31,29 @@ Cloudnode Developer Shell".
 
 This will:
 
-- Create a compute instance
-- Open a terminal window
+- Provision a virtual compute instance
+- Open a terminal window in the browser
 - Mount your persistent /home drive
-- Mount your managed /app device (readonly)  
+- Mount your managed /app device (readonly)
+
+Virtual machine instance
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you launch Developer Shell the platform provisions a docker-based 
+compute instance running an Ubuntu 14.04 Linux operating system. Shell
+instances persist while your Shell session is active and terminate after
+a hour of inactivity.
+
+Command-line access
+~~~~~~~~~~~~~~~~~~~
+
+The Developer Shell provides command-line access to the virtual machine
+instance in a browser-based terminal window.
+
+Persistent disk storage
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Developer Shell provisions 5GB of persistent disk storage mounted as your
+$HOME directory. This storage will unlike the instance itself not time out
+on inactivity. All our file stored in your home directory, including projects,
+scripts annd configuration files
