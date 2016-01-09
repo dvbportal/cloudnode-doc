@@ -9,7 +9,7 @@ on your system. All tools are always available when you need them.
 
 -  :ref:`getting_started`
 -  :ref:`features`
--  :ref:`use_cases'
+-  :ref:`use_cases`
 
 You can also use the Developer Shell to perform tasks which would normally require a Linux
 machine even if you are running a PC or another device.
