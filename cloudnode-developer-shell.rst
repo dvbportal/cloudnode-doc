@@ -7,9 +7,12 @@ manage your projects from your browser without the  need to install the
 `Cloudnode Command Line </cloudnode-command-line>`_ and other tools locally
 on your system. All tools are always available when you need them.
 
+-  :ref:`getting_started`
+-  :ref:`features`
+
 Developer Shell features:
 
-- A ephemeral compute engine instance running Ubuntu 14.04 LTS
+- An ephemeral compute engine instance running Ubuntu 14.04 LTS
 - Command-line access to the instance from your web browser using a terminal window
 - About 5 GB persistant disk storage mounted as your $HOME directory
 - Cloudnode Command Line and other tools (node, git, docker, ...) preinstalled and ready to use
@@ -18,8 +21,11 @@ Developer Shell features:
 You can also use the Developer Shell to perform tasks which would normally require a Linux
 machine even if you are running a PC or another device.
 
-.. note:: **Beta** 
+.. note:: **Beta**
+
    This is a Beta feature that is not covered by a SLA and may be subject to changes.
+
+.. _getting_started:
 
 Getting Started
 ~~~~~~~~~~~~~~~
@@ -36,16 +42,19 @@ This will:
 - Mount your persistent /home drive
 - Mount your managed /app device (readonly)
 
+.. _features:
+
 Features
 ~~~~~~~~
 
 Developer Shell has the following features:
 
-- A ephemeral virtual machine instance
+- An ephemeral virtual machine instance
 - Terminal access from a web browser
 - 5 GB persistent disk storage
-- Preinstalled Cloudnode CLI and other tools
+- Preinstalled Cloudnode CLI and other tools (node, git, docker, ...)
 - Language support for Javascript, Python, C and C++
+- Read-only access to all your managed apps running on the platform
 
 Virtual machine instance
 ------------------------
