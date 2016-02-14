@@ -1,7 +1,7 @@
 Node.js
 =======
 
-**Current versions: 0.10.35, 0.11.13 (01/01/15)**
+**Current versions: 0.12, 4.x, 5.x (01/01/16)**
 
 Node.js is a non-blocking, evented I/O framework using the V8 JavaScript
 engine.
@@ -9,8 +9,8 @@ engine.
 We host Node.js applications in their own VMs, which we call Node
 Machines. Cloudnode is based on the Nodester platform. During the beta
 stage, we may need to shut the service down for upgrades or service
-without notice. You should join our `discussion
-group <https://groups.google.com/forum/#!forum/cloudnode>`_ to share any feedback
+without notice. You should join our `community
+channel <https://slackin.cloudno.de/>`_ to share any feedback
 and get important announcements that can affect running apps.
 
 -  `Preparing for deployment <#preparing>`_
