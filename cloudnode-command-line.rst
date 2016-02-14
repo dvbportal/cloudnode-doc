@@ -12,6 +12,10 @@ apps.
 The command line tool is itself a Node.js application the runs on the
 client side. See the `Prerequisites </prerequisites>`_ for details.
 
+If you don't want to install software on your local computer, use the
+developer shell which comes pre-installed with the command line and many 
+more tools.
+
 Installation
 ------------
 
