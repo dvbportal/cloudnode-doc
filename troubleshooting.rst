@@ -179,8 +179,8 @@ also use the command line to tail your application log file. Run the
     cloudnode info Server running
     cloudnode info
 
-Cloudnode Google Group
-----------------------
+Cloudnode Community Channnel
+----------------------------
 
 For additional help visit the \ `Cloudnode Community
 Slack Channel <https://slackin.cloudno.de/>`_\ .
