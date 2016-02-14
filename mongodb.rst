@@ -15,9 +15,6 @@ using the Web GUI. Clicking on a database name opens the database detail
 page, where you find your API key and URL to connect internally to your
 database from your apps. You can also view database and collection metrics.
 
-The backup page allows you to download a database dump from the last 
-ten days.
-
 MongoDB Credentials
 ~~~~~~~~~~~~~~~~~~~
 
@@ -32,6 +29,13 @@ creation. The environment will receive the follow variables:
 You can check these values from the "Manage App" screen by clicking "Get
 Env". You are the owner of the database. You can create additional users
 and admins using the mongo shell or programmatically from your app. 
+
+MongoDB Backups
+~~~~~~~~~~~~~~~
+
+Every database running on the Cloudnode platform is backed up on a daily basis.
+The backup are stored for at least 14 days. You can download your backups
+from the database details page and store them in another safe place.
 
 Usage Example
 ~~~~~~~~~~~~~
