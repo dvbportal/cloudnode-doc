@@ -9,7 +9,7 @@ access the database remotely or for replication.
 CouchDB Administration
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The "My Databases" tab lists your databases. From here you can also
+The "Databases" tab lists your databases. From here you can also
 create new databases, delete existing database or manage your databases
 using the Futon Web GUI. You can add sharing rules and manage your map
 reduce functions. Clicking on a database name opens the database detail
