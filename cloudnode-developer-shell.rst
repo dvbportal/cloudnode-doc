@@ -87,7 +87,7 @@ Editors           vi(m), mc
 Build Tools       make, npm, nvm
 Compilers         Python 2.7, Node.js 0.12.9 and 4.2.4, gcc 4.8.4
 Source Control    git 1.9.1
-Additional Tools  Docker 1.9.1, Cloudnode-cli 0.2.23
+Additional Tools  Docker 1.9.1, Cloudnode-cli 0.2.23, redis-cli 2.8.4, mongo 3.0.8
 ================  ===============================================
 
 Additional software can be installed as Docker containers or using apt. We will also 
