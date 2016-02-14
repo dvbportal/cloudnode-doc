@@ -182,8 +182,8 @@ also use the command line to tail your application log file. Run the
 Cloudnode Google Group
 ----------------------
 
-For additional help visit the \ `Cloudnode Google
-Group <http://support.cloudno.de>`_\ .
+For additional help visit the \ `Cloudnode Community
+Slack Channel <https://slackin.cloudno.de/>`_\ .
 
 Open a ticket
 -------------
