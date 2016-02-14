@@ -47,6 +47,7 @@ These documents are also available as an eBook for your preferred reader:
    troubleshooting
    node.js
    couchdb
+   mongodb
    redis
    ssl
    http-caching
