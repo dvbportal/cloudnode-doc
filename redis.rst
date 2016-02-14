@@ -26,7 +26,7 @@ needed to access the Redis Database. Tot do so select the Redis database
 during application creation. The environment will receive the following
 variables:
 
--  redis\_host="host IP address"
+-  redis\_host="host name"
 -  redis\_port="port number"
 -  redis\_auth="autorization code"
 
