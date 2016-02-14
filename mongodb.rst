@@ -9,11 +9,11 @@ We also provide access to the Mongo shell and tools through the
 MongoDB Administration
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The "My Databases" tab lists your databases. From here you can also
+The "Databases" tab lists your databases. From here you can also
 create new databases, delete existing database or manage your databases
 using the Web GUI. Clicking on a database name opens the database detail
-page, where you find your API key and URLs to internally access you
-database. You can also view database and collection metrics.
+page, where you find your API key and URL to connect internally to your
+database from your apps. You can also view database and collection metrics.
 
 The backup page allows you to download a database dump from the last 
 ten days.
@@ -25,7 +25,7 @@ Your app's environment is populated with variables that contain all data
 to access the database. To do so, select the MongoDB during application
 creation. The environment will receive the follow variables:
 
--  "DBHOST"="ip address"
+-  "DBHOST"="MongoDB host name"
 -  "DBUSER"="MongoDB user name"
 -  "DBPWD"="MongoDB password" (also called MongoDB apikey)
 
