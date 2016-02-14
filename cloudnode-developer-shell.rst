@@ -101,6 +101,7 @@ Use Cases
 - Manage your applications using the Cloudnode CLI
 - Manage your Git repositories
 - Inspect you managed apps, view full log files
+- Manage, import and export your Redis and MongoDB databases
 - Checkout your apps, make changes and commit, all from your browser
 - Build and run Docker containers
 - Checkout from and commit to Docker registries from your browser
