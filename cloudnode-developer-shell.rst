@@ -46,6 +46,7 @@ Developer Shell has the following features:
 - 5 GB persistent disk storage
 - Preinstalled Cloudnode CLI and other tools (node, git, docker, ...)
 - Language support for Javascript, Python, C and C++
+- :ref:`web_preview` functionality
 - Read-only access to all your managed apps running on the platform
 
 Virtual machine instance
@@ -93,6 +94,21 @@ Additional Tools  Docker 1.9.1, Cloudnode-cli 0.2.23, redis-cli 2.8.4, mongo 3.0
 Additional software can be installed as Docker containers or using apt. We will also 
 add tools you are missing to the base images upon request. We welcome your feeedback.
 
+.. _web_preview:
+
+Web preview
+~~~~~~~~~~~
+
+Developer Shell provides web preview functionality that allows you to run web 
+applications on the virtual machine instance and preview them from anywhere. 
+The web applications must listen for HTTP requests on port 8080.
+
+To connect to a web application running on an instance, click the Web Preview
+Button above the Developer Shell terminal window. This opens a preview URL on 
+the Developer Shell proxy service in a new browser window. You can share this
+URL for collaboration and demostration puposes. Keep in mind that the service
+will only be running for two days. It is just a preview.
+
 .. _use_cases:
 
 Use Cases
@@ -103,6 +119,7 @@ Use Cases
 - Inspect you managed apps, view full log files
 - Manage, import and export your Redis and MongoDB databases
 - Checkout your apps, make changes and commit, all from your browser
+- Run a preview of your apps
 - Build and run Docker containers
 - Checkout from and commit to Docker registries from your browser
 - Work from wherever you are
