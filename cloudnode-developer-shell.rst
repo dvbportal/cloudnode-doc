@@ -107,7 +107,8 @@ To connect to a web application running on an instance, click the Web Preview
 Button above the Developer Shell terminal window. This opens a preview URL on 
 the Developer Shell proxy service in a new browser window. You can share this
 URL for collaboration and demostration puposes. Keep in mind that the service
-will only be running for two days. It is just a preview.
+runs on a ephemeral instance and will only be running for 48 hours if not 
+stopped before.
 
 .. _use_cases:
 
